@@ -1,0 +1,346 @@
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+
+     background-color: #FCFCFC;
+     background-attachment: fixed;
+     overflow-x: hidden;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+ }
+
+
+ /* Main Nav Bar */
+ #nav-main {
+
+     width: 100vw;
+     height: 80px;
+     box-sizing: border-box;
+     z-index: 1000;
+     position: fixed;
+     background-color: white;
+
+ }
+
+ #nav-1 {
+     width: 40%;
+     height: 80px;
+     box-sizing: border-box;
+
+
+     img {
+         height: 100%;
+         width: auto;
+         object-fit: contain;
+     }
+
+     h1 {
+
+         /* title  */
+         color: #333333;
+         font-size: 30px;
+         font-weight: 700;
+         margin-top: 10px;
+     }
+
+     h6 {
+
+         /* subtitle */
+         color: #666666;
+         font-size: 13px;
+         font-weight: 400;
+         margin-top: -10px;
+         margin-left: 9px;
+     }
+
+ }
+
+ /* for space */
+ #nav-3 {
+     width: 10%;
+
+ }
+
+ #nav-2 {
+     width: 50%;
+     box-sizing: border-box;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+ }
+
+ .nav-a {
+     font-size: 16px;
+     font-weight: 500;
+     color: #333333;
+     text-decoration: none;
+     border-bottom: 2px solid transparent;
+
+ }
+
+ /* Anchor tag hover effects */
+ .nav-a:hover {
+     color: #347fca;
+     border: 1px solid rgba(73, 66, 66, 0.248);
+     padding: 3px;
+     text-decoration: none;
+     border-radius: 5px;
+     border-bottom: 2px solid #0077e6;
+     transition: all 0.3s ease;
+
+ }
+
+ #icon {
+
+     margin-right: 15PX;
+
+     i {
+         padding-right: 5px;
+         color: #333333;
+     }
+
+     i:hover {
+         color: #0073e6;
+         transition: all 0.3s ease;
+     }
+
+
+ }
+
+ .innn {
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+ }
+
+
+ /* card effect */
+
+ .card {
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+ }
+
+
+ @media (max-width: 575px) {
+
+     /* when we go under the range 575 px changes */
+
+     #nav-2 {
+         display: flex !important;
+         flex-direction: column !important;
+         width: 100% !important;
+         box-sizing: border-box;
+     }
+
+     #nav-2 .nav-a {
+         display: block !important;
+         width: 100% !important;
+         text-align: right;
+         line-height: 1.2;
+         border-right: 2px solid #0f4198;
+         border-radius: 2px;
+         padding-right: 5px;
+         margin-right: 10px;
+     }
+
+
+     #nav-2 .nav-a:hover {
+         border: none !important;
+     }
+
+     #icon {
+         display: none !important;
+     }
+ }
+
+ /* Nav End........................................................................................................................... */
+
+ #sec1 {
+
+    /* for unhiiden the back imge of nav */
+
+     padding-top: 80px;
+ }
+
+ /* ............................................foot............... */
+
+ #foot {
+     background-color: #232F3E;
+ }
+
+ .lastfoot {
+     width: 100%;
+     height: 110px;
+     border-top: 5px solid;
+     border-image: linear-gradient(to right, rgb(160, 40, 60), rgba(0, 0, 255, 0.721), purple) 1;
+     background: #131A22;
+     color: white;
+     text-align: center;
+     display: flex;
+     flex-flow: row;
+     justify-content: flex-start;
+     align-items: center;
+
+     ul {
+         list-style-type: none;
+     }
+
+     p {
+         padding-top: 15px;
+     }
+
+     h5 {
+         padding-top: 10px;
+     }
+
+ }
+
+ .lfoot {
+     height: 100px;
+     width: 250px;
+     margin-left: 40px;
+     padding-top: 0px;
+     padding-bottom: 20px;
+
+     a {
+         text-decoration: none;
+         color: white;
+     }
+ }
+
+ @media (max-width: 576px) {
+
+     footer p,
+     h6,
+     h5,
+     iframe {
+         display: none !important;
+     }
+ }
+
+
+ /* --------------------------------------------about page------------------------------------------- */
+
+ #abt {
+
+     padding-top: 90px;
+
+
+     img {
+         height: auto;
+         width: 100%;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+     }
+
+     h1 {
+         color: #270c0c;
+     }
+
+     p {
+         color: #333333;
+         padding-left: 100px;
+         padding-right: 100px;
+     }
+
+     img:hover {
+         border: 1px solid grey;
+         transition: transform 0.5s ease;
+         transform: scale(1.1);
+     }
+ }
+
+ #team {
+     img {
+         width: 100%;
+         height: auto;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+         padding: 10px;
+     }
+
+     h4 {
+         color: #1e6470;
+     }
+
+     img:hover {
+         border: 1px solid rgb(255, 132, 0);
+         transition: transform 0.5s ease;
+         transform: scale(1.1);
+         padding: 15px;
+     }
+
+ }
+
+ /* =========================================services page============================================= */
+
+ #sect {
+
+     padding-top: 90px;
+
+     h3 {
+         color: #1e6470;
+     }
+
+     p {
+         padding-left: 150px;
+         padding-right: 150px;
+         color: #666666;
+     }
+ }
+
+ #serv {
+
+     img {
+         width: 100%;
+         height: auto;
+         border: 1px solid grey;
+         margin-top: 20px;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+     }
+
+     img:hover {
+         border: 1px solid grey;
+         transition: transform 0.5s ease;
+         transform: scale(1.1);
+         padding: 5px;
+     }
+ }
+
+
+ .sinfo {
+     height: 200px;
+     width: 100%;
+     margin-top: 20px;
+
+     p {
+         color: rgb(83, 83, 83);
+     }
+
+     h2 {
+         text-decoration: bold;
+         padding-left: 20px;
+     }
+
+ }
+
+
+ /* =========================================Contact============================================= */
+
+
+ #con{
+
+     padding-top: 90px;
+
+     h4 {
+         color: #270c0c;
+     }
+
+     iframe {
+         margin-left: 60px;
+         margin-top: 10px;
+     }
+ }
+
+  /*======================================================================================================= */ 
